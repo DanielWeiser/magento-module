@@ -16,6 +16,7 @@ class Data extends AbstractHelper
     const XML_PATH_DEFAULT_SITE = 'retailcrm_site/default';
     const XML_PATH_SITES = 'retailcrm_sites/';
     const XML_PATH_DAEMON_COLLECTOR = 'daemon_collector/';
+    const XML_PATH_CONSULTANT = 'consultant/';
     const XML_PATH_INVENTORIES = 'inventories_upload/';
 
     public function __construct(
@@ -175,6 +176,20 @@ class Data extends AbstractHelper
         }
 
         return false;
+    }
+
+    /**
+     * @param $website
+     *
+     * @return bool|mixed
+     */
+    public function getConsultantScript($website)
+    {
+        return $this->scopeConfig->getValue(
+            self::XML_PATH_RETAILCRM . self::XML_PATH_CONSULTANT . 'consultant_script',
+            ScopeInterface::SCOPE_WEBSITES,
+            $website
+        );
     }
 
     /**

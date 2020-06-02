@@ -4,5 +4,8 @@
         <referenceBlock name="head.additional">
             <block class="Retailcrm\Retailcrm\Block\Frontend\DaemonCollector" name="block_name" template="Retailcrm_Retailcrm::daemon_collector.phtml" />
         </referenceBlock>
+        <referenceBlock name="head.additional">
+            <block class="Retailcrm\Retailcrm\Block\Frontend\Consultant" name="block_consultant" template="Retailcrm_Retailcrm::daemon_collector.phtml" />
+        </referenceBlock>
     </body>
 </page>

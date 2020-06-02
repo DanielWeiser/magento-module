@@ -86,6 +86,12 @@
                     <label>Site key</label>
                 </field>
             </group>
+            <group id="consultant" translate="label" type="select" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Online Consultant</label>
+                <field id="consultant_script" translate="label" type="textarea" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Code for inserting</label>
+                </field>
+            </group>
             <group id="inventories_upload" translate="label" type="select" sortOrder="90" showInDefault="1" showInWebsite="0" showInStore="0">
                 <label>Synchronization of the stock balance</label>
                 <field id="active" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
